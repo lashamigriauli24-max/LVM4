@@ -123,7 +123,7 @@
 <body>
     <div id="message">დააჭირე გულს... 💕</div>
     <button id="heartButton">💗</button>
-    <div id="subtitle">შენთვის განსაკუთრებული შეტყობინება</div>
+    <div id="subtitle">შენთვის განსაკუთრებული შეტყობინებაა</div>
     
     <script>
         let clickCount = 0;
@@ -163,7 +163,7 @@
             createSparkles(e.clientX, e.clientY);
             
             if (clickCount === 1) {
-                message.textContent = 'მიყვარხარ ჩემო სიცოცხე';
+                message.textContent = 'მიყვარხარ ჩემო სიცოცხლე';
                 message.style.fontSize = '42px';
                 button.textContent = '💝';
                 subtitle.textContent = 'კიდევ დააჭირე... 😊';
@@ -179,7 +179,7 @@
                     }, i * 100);
                 }
             } else if (clickCount === 2) {
-                message.textContent = 'ყავა მომიდუღე გთხოვ ჩემო სიცოცხე';
+                message.textContent = 'ყავა მომიდუღე გთხოვ ჩემო სიცოცხლე';
                 message.style.fontSize = '38px';
                 button.textContent = '☕';
                 subtitle.textContent = '😄 ხო ყავისთვის იყო ეს ყველაფერი! 💕';
@@ -203,7 +203,7 @@
                 const randomMessages = [
                     '💕 ჩემო სიყვარულო',
                     '☕ ყავა გთხოვ',
-                    '😊 მადლობა რომ ხარ',
+                    '😊 მადლობა რომ არსებობ',
                     '💝 შენ ხარ ყველაფერი'
                 ];
                 message.textContent = randomMessages[Math.floor(Math.random() * randomMessages.length)];
